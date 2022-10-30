@@ -45,7 +45,7 @@ function StoreItem({ id, name, price, imgUrl }) {
 
                 <Button onClick={()=>increaseCartQuantity(id)}>+</Button>
               </div>
-              <Button variant="danger" size="sm">remove</Button>
+              <Button variant="danger" size="sm" onClick={()=>removeFromCart(id)}>remove</Button>
             </div>
           )}
         </div>
